@@ -75,19 +75,57 @@
     padding: 10px;
     width: 80%;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #E5E7EB;
+    outline: none;
 }
 
+form_area .mid_form .angry-grid .input input:focus{
+  border: 2px solid skyblue;
+  box-shadow: 2px 4px 14px #ccc;
+}
 .form_area .bottom {
-  
+  padding: 10px 20px;
+   margin: 10px;
 }
 
 .form_area .bottom .links{
     display: flex;
     gap: 15px;
+    margin-left: 20px;
 }
 
 .form_area .bottom button.sign-up-btn{
   width: 260px;
-  padding: 10px;
+  padding: 12px;
+  background: #596D48;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  margin: 20px 10px;
+}
+
+.form_area .bottom .links a{
+  color: #596D48;
+}
+
+@media screen and (max-width: 665px) {
+  
+.logo_area{
+  display: none;
+}
+
+.form_area{
+  width: 100%;
+  background: url("bg1.jpg");
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+.form_area .mid_form .angry-grid {
+  display: flex;
+  flex-direction: column;
+  
+}
+
 }
