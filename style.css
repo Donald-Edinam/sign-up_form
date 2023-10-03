@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: Ubuntu;
 }
 
 .main {
@@ -17,15 +18,76 @@
 .logo_area{
   width: 35%;
   height: 100vh;
-  background-color:darkcyan;
+  background:url("bg1.jpg");
   background-size: cover;
 }
 
 .form_area{
-  width: 65%;
+  width: 80%;
   height: 100vh;
   background-color: #f3f4f4;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.form_area .top{
+    padding: 10px 20px;
+    margin: 10px;
+    width: 70%;
+}
+
+.form_area .top p,
+.form_area .top h4{
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: normal;
+   
+}
+
+.form_area .mid_form{
+   display: block;
+   padding: 10px 20px;
+   margin: 10px;
+   /* box-shadow: 10px 10px 20px #ccc; */
+}
+
+.form_area .mid_form .angry-grid {
+   display: grid; 
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
+}
+
+.form_area .mid_form .angry-grid .input{
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 70%;
+}
+
+.form_area .mid_form .angry-grid .input label{
+    padding: 15px 0 0 5px;
+    font-size: 16px;
+}
+
+.form_area .mid_form .angry-grid .input input{
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.form_area .bottom {
+  
+}
+
+.form_area .bottom .links{
+    display: flex;
+    gap: 15px;
+}
+
+.form_area .bottom button.sign-up-btn{
+  width: 260px;
+  padding: 10px;
 }
